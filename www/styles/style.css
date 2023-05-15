@@ -11,12 +11,14 @@ p {
   }
 
   h1 {
-    text-align: middle;
+    text-align: middle/center; 
+    
+    
     color: #B6E2D3;
     font-family:cursive;
     font-size: 70px;
   }
 
   ul {
-    text-align:justify;
+    text-align:right;
   }

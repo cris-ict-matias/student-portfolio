@@ -1,38 +1,97 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My Highschool Career</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <title>My High School Career</title>
+    <style>
+      /* Center text */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #center {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+      }
+      /* Arrow */
+      #arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        left: -60px;
+        width: 80px;
+        height: 80px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Curved_Arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
+      /* Boxes */
+      .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+      .box {
+        border: 1px solid black;
+        padding: 20px;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      .box h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .box p {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
-    
-    <h1><center>My Highschool career</center></h1>
-    
-    <p>About me</p>
-  
-    
-
-    
-      <nav>
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Achievements</a>
-          </li>
-          <li>
-            <a href="">About me</a>
-          </li>
-          <li>
-            <a href="">My history</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+    <div id="center">
+      <div id="arrow"></div>
+      <h1>My High School Career</h1>
+    </div>
+    <div class="box-container">
+      <div class="box" onclick="window.open('accomplishments.html')">
+        <h2>Accomplishments</h2>
+        <p>Click to learn more</p>
+      </div>
+      <div class="box" onclick="window.open('sports.html')">
+        <h2>Sports</h2>
+        <p>Click to learn more</p>
+      </div>
+      <div class="box" onclick="window.open('hobbies.html')">
+        <h2>Hobbies</h2>
+        <p>Click to learn more</p>
+      </div>
+      <div class="box" onclick="window.open('academics.html')">
+        <h2>Academics</h2>
+        <p>Click to learn more</p>
+      </div>
+    </div>
+    <script>
+      // Position arrow relative to text
+      const arrow = document.getElementById("arrow");
+      const center = document.getElementById("center");
+      const centerRect = center.getBoundingClientRect();
+      arrow.style.top = `${centerRect.top + 60}px`;
+    </script>
   </body>
 </html>
+
+
+
+
+
