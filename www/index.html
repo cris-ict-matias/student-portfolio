@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>My High School Career</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
       /* Center text */
       body {
@@ -16,25 +17,12 @@
         transform: translate(-50%, -50%);
         font-size: 48px;
       }
-      /* Arrow */
-      #arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(180deg);
-        left: -60px;
-        width: 80px;
-        height: 80px;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Curved_Arrow.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: -1;
-      }
+     
+    
       /* Boxes */
       .box-container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: column;
         max-width: 1000px;
         margin: 0 auto;
         margin-top: 100px;
@@ -44,7 +32,7 @@
         border: 1px solid black;
         padding: 20px;
         width: 150px;
-        height: 150px;
+        height: 125px;
         text-align: center;
         cursor: pointer;
         margin-bottom: 20px;
@@ -52,10 +40,46 @@
       .box h2 {
         margin: 0;
         font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .box p {
         font-size: 16px;
       }
+
+      h1 {
+        color: #333333;
+      }
+
+      h2, h3 {
+        color: #666666; /* slightly lighter or different color from title */
+      }
+
+      body {
+        color: #333333; /* neutral color */
+      }
+
+      a {
+        color: #FFC1A1; /* bright and contrasting color */
+      }
+
+      .button {
+        background-color: #FFC300; /* bold or contrasting color */
+        color: #FFFFFF; /* contrasting color for text */
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      body {
+        background-color: #F2F2F2; /* light and neutral color */
+      }
+
+      
+
+
     </style>
   </head>
   <body>
@@ -66,30 +90,29 @@
     <div class="box-container">
       <div class="box" onclick="window.open('accomplishments.html')">
         <h2>Accomplishments</h2>
-        <p>Click to learn more</p>
+        <a>Click to learn more</a>
       </div>
       <div class="box" onclick="window.open('sports.html')">
         <h2>Sports</h2>
-        <p>Click to learn more</p>
+        <a>Click to learn more</a>
       </div>
       <div class="box" onclick="window.open('hobbies.html')">
         <h2>Hobbies</h2>
-        <p>Click to learn more</p>
+        <a>Click to learn more</a>
       </div>
       <div class="box" onclick="window.open('academics.html')">
         <h2>Academics</h2>
-        <p>Click to learn more</p>
+        <a>Click to learn more</a>
       </div>
     </div>
     <script>
-      // Position arrow relative to text
-      const arrow = document.getElementById("arrow");
-      const center = document.getElementById("center");
-      const centerRect = center.getBoundingClientRect();
-      arrow.style.top = `${centerRect.top + 60}px`;
+      
     </script>
   </body>
 </html>
+
+
+
 
 
 

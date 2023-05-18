@@ -1,24 +1,84 @@
-p {
+
+
+  title { 
     color: red;
   }
-  
 
-  body {
-    background-color: #EF7C8E;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+  /* Titles */
+h1 {
+  color: #333333; /* darker or bolder color */
+}
 
-  h1 {
-    text-align: middle/center; 
+/* Headings and Subheadings */
+h2, h3 {
+  color: #666666; /* slightly lighter or different color from title */
+}
+
+/* Body Text */
+body {
+  color: #333333; /* neutral color */
+}
+
+/* Links */
+a {
+  color: #FF5733; /* bright and contrasting color */
+}
+
+/* Buttons */
+.button {
+  background-color: #FFC300; /* bold or contrasting color */
+  color: #FFFFFF; /* contrasting color for text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Background */
+body {
+  background-color: #F2F2F2; /* light and neutral color */
+}
+
+      /* Center text */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #center {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+      }
+     
     
-    
-    color: #B6E2D3;
-    font-family:cursive;
-    font-size: 70px;
-  }
-
-  ul {
-    text-align:right;
-  }
+      /* Boxes */
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+      .box {
+        border: 1px solid black;
+        padding: 20px;
+        width: 150px;
+        height: 125px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      .box h2 {
+        margin: 0;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box p {
+        font-size: 16px;
+      }
