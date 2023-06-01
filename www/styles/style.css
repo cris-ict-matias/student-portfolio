@@ -122,7 +122,7 @@ body {
   right: 50px;
   transform: translateY(-50%);
   width: 300px;
-  height: 450px;
+  height: px;
   border: 1px solid black;
   padding: 20px;
   text-align: center;
@@ -137,6 +137,3 @@ body {
   font-size: larger;
 }
 
-.sentence p {
-  margin: 0 10px;
-}
